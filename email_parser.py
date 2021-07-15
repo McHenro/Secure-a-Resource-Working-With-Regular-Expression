@@ -8,12 +8,12 @@ def email_parser(email):
     # finding the position of "@", doing some slicing and converting to dictionary
         position = email.index('@')
         prefix = email[:position]
-        sufix = email[position:]
+        sufix = email[position+1:]
         parsed_output= {'username': prefix, 'domain': sufix}    
         return parsed_output
     else:
         return None
-print(email_parser("eewhcvxzdfd@gmail.com"))
+print(email_parser("sunday4f@gmail.com"))
 
 
 
